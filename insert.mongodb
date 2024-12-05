@@ -1,0 +1,26 @@
+const database = 'mekanbul';
+use(database);
+db.venues.insertOne(
+{
+  "name": "Lapaz Kafe",
+  "address": "Süleyman Demirel Üniversitesi",
+  "rating": 5,
+  "foodanddrink": [
+    "coffee",
+    "tea",
+    "tiramisu"
+  ],
+  "coordinates": [
+    37.83226584629666,
+    30.524732239878013
+  ],
+  "hours": [
+    {
+      "days": "Pazartesi-Cuma",
+      "open": "10:00",
+      "close": "01:00",
+      "isClosed": false
+    },
+  ]
+}
+ );
